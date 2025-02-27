@@ -1,0 +1,486 @@
+{
+    "components": [
+        {
+            "SOURCE": "NA",
+            "TARGET": "FREQ"
+        },
+        {
+            "SOURCE": "Country Code",
+            "TARGET": "REF_AREA"
+        },
+        {
+            "SOURCE": "Indicator Code",
+            "TARGET": "INDICATOR"
+        },
+        {
+            "SOURCE": "Indicator Name",
+            "TARGET": "SEX"
+        },
+        {
+            "SOURCE": "Indicator Code",
+            "TARGET": "AGE"
+        },
+        {
+            "SOURCE": "Indicator Name",
+            "TARGET": "URBANISATION"
+        },
+        {
+            "SOURCE": "Indicator Name",
+            "TARGET": "UNIT_MEASURE"
+        },
+        {
+            "SOURCE": "NA",
+            "TARGET": "COMP_BREAKDOWN_1"
+        },
+        {
+            "SOURCE": "NA",
+            "TARGET": "COMP_BREAKDOWN_2"
+        },
+        {
+            "SOURCE": "NA",
+            "TARGET": "COMP_BREAKDOWN_3"
+        },
+        {
+            "SOURCE": "year",
+            "TARGET": "TIME_PERIOD"
+        },
+        {
+            "SOURCE": "NA",
+            "TARGET": "AGG_METHOD"
+        },
+        {
+            "SOURCE": "Indicator Name",
+            "TARGET": "UNIT_TYPE"
+        },
+        {
+            "SOURCE": "NA",
+            "TARGET": "DECIMALS"
+        },
+        {
+            "SOURCE": "NA",
+            "TARGET": "DATABASE_ID"
+        },
+        {
+            "SOURCE": "NA",
+            "TARGET": "TIME_FORMAT"
+        },
+        {
+            "SOURCE": "Indicator Name",
+            "TARGET": "COMMENT_TS"
+        },
+        {
+            "SOURCE": "NA",
+            "TARGET": "COMMENT_OBS"
+        },
+        {
+            "SOURCE": "Indicator Name",
+            "TARGET": "UNIT_MULT"
+        },
+        {
+            "SOURCE": "NA",
+            "TARGET": "OBS_STATUS"
+        },
+        {
+            "SOURCE": "NA",
+            "TARGET": "DATA_SOURCE"
+        },
+        {
+            "SOURCE": "NA",
+            "TARGET": "OBS_CONF"
+        },
+        {
+            "SOURCE": "value",
+            "TARGET": "OBS_VALUE"
+        }
+    ],
+    "representation": {
+        "FREQ": [
+            {
+                "TARGET": "A",
+                "LABEL": "Annual"
+            }
+        ],
+        "REF_AREA": {},
+        "INDICATOR": {},
+        "SEX": [
+            {
+                "SOURCE": " female",
+                "TARGET": "F"
+            },
+            {
+                "SOURCE": " male",
+                "TARGET": "M"
+            },
+            {
+                "SOURCE": ".*",
+                "TARGET": "_T"
+            }
+        ],
+        "AGE": [
+            {
+                "SOURCE": "\\.0004",
+                "TARGET": "Y0T4"
+            },
+            {
+                "SOURCE": "\\.0014",
+                "TARGET": "Y0T14"
+            },
+            {
+                "SOURCE": "\\.0509",
+                "TARGET": "Y5T9"
+            },
+            {
+                "SOURCE": "\\.1014",
+                "TARGET": "Y10T14"
+            },
+            {
+                "SOURCE": "\\.1519",
+                "TARGET": "Y15T19"
+            },
+            {
+                "SOURCE": "\\.1524",
+                "TARGET": "Y15T24"
+            },
+            {
+                "SOURCE": "\\.1564",
+                "TARGET": "Y15T64"
+            },
+            {
+                "SOURCE": "\\.2024",
+                "TARGET": "Y20T24"
+            },
+            {
+                "SOURCE": "\\.2529",
+                "TARGET": "Y25T29"
+            },
+            {
+                "SOURCE": "\\.3034",
+                "TARGET": "Y30T34"
+            },
+            {
+                "SOURCE": "\\.3539",
+                "TARGET": "Y35T39"
+            },
+            {
+                "SOURCE": "\\.4044",
+                "TARGET": "Y40T44"
+            },
+            {
+                "SOURCE": "\\.4549",
+                "TARGET": "Y45T49"
+            },
+            {
+                "SOURCE": "\\.5054",
+                "TARGET": "Y50T54"
+            },
+            {
+                "SOURCE": "\\.5559",
+                "TARGET": "Y55T59"
+            },
+            {
+                "SOURCE": "\\.6064",
+                "TARGET": "Y60T64"
+            },
+            {
+                "SOURCE": "\\.6569",
+                "TARGET": "Y65T69"
+            },
+            {
+                "SOURCE": "\\.65UP",
+                "TARGET": "Y_GE65"
+            },
+            {
+                "SOURCE": "\\.7074",
+                "TARGET": "Y70T74"
+            },
+            {
+                "SOURCE": "\\.7579",
+                "TARGET": "Y75T79"
+            },
+            {
+                "SOURCE": "\\.80UP",
+                "TARGET": "Y_GE80"
+            },
+            {
+                "SOURCE": ".*",
+                "TARGET": "_T"
+            }
+        ],
+        "URBANISATION": [
+            {
+                "SOURCE": "^SP\\.RUR",
+                "TARGET": "RUR"
+            },
+            {
+                "SOURCE": "^SP\\.URB",
+                "TARGET": "URB"
+            },
+            {
+                "SOURCE": "\\.RU\\.K2$",
+                "TARGET": "RUR"
+            },
+            {
+                "SOURCE": "\\.RU\\.ZS$",
+                "TARGET": "RUR"
+            },
+            {
+                "SOURCE": "\\.UR\\.ZS$",
+                "TARGET": "URB"
+            },
+            {
+                "SOURCE": "\\.UR\\.K2$",
+                "TARGET": "URB"
+            },
+            {
+                "SOURCE": ".*",
+                "TARGET": "_T"
+            }
+        ],
+        "UNIT_MEASURE": [
+            {
+                "SOURCE": "%",
+                "TARGET": "PT"
+            },
+            {
+                "SOURCE": "current US\\$",
+                "TARGET": "USD_CUR"
+            },
+            {
+                "SOURCE": "sq\\. km",
+                "TARGET": "KM2"
+            },
+            {
+                "SOURCE": "current LCU",
+                "TARGET": "XDC_CUR"
+            },
+            {
+                "SOURCE": "current international \\$",
+                "TARGET": "PP_CUR"
+            },
+            {
+                "SOURCE": "constant [0-9]{4} US\\$",
+                "TARGET": "USD_CONST"
+            },
+            {
+                "SOURCE": "constant LCU",
+                "TARGET": "XDC_CONST"
+            },
+            {
+                "SOURCE": "constant\u00a0[0-9]{4}\u00a0international\u00a0\\$",
+                "TARGET": "PP_CONST"
+            },
+            {
+                "SOURCE": "current USD",
+                "TARGET": "USD_CUR"
+            },
+            {
+                "SOURCE": "years",
+                "TARGET": "YR"
+            },
+            {
+                "SOURCE": "days",
+                "TARGET": "D"
+            },
+            {
+                "SOURCE": "per\u00a0100,000\u00a0population",
+                "TARGET": "PER_100000_POP"
+            },
+            {
+                "SOURCE": "per\u00a0100,000\u00a0female\u00a0population",
+                "TARGET": "PER_100000_POP"
+            },
+            {
+                "SOURCE": "per\u00a0100,000\u00a0male\u00a0population",
+                "TARGET": "PER_100000_POP"
+            },
+            {
+                "SOURCE": "1=low\u00a0to\u00a05=high",
+                "TARGET": "IX_1T5"
+            },
+            {
+                "SOURCE": "index\u00a0([0-9]{4}-[0-9]{4}\u00a0=\u00a0100)",
+                "TARGET": "IX_1T10000"
+            },
+            {
+                "SOURCE": "index\u00a0([0-9]{4}\u00a0=\u00a0100)",
+                "TARGET": "IX_1T10000"
+            },
+            {
+                "SOURCE": "scale\u00a01-100",
+                "TARGET": "IX_1T100"
+            },
+            {
+                "SOURCE": "1=low\u00a0to\u00a06=high",
+                "TARGET": "IX_1T6"
+            },
+            {
+                "SOURCE": "0=weak\u00a0to\u00a012=strong",
+                "TARGET": "IX_0T12"
+            },
+            {
+                "SOURCE": "0=low\u00a0to\u00a08=high",
+                "TARGET": "IX_0T8"
+            },
+            {
+                "SOURCE": "0=less\u00a0disclosure\u00a0to\u00a010=more\u00a0disclosure",
+                "TARGET": "IX_0T10"
+            },
+            {
+                "SOURCE": ".*",
+                "TARGET": "COUNT"
+            }
+        ],
+        "COMP_BREAKDOWN_1": [
+            {
+                "TARGET": "_Z",
+                "LABEL": "NA"
+            }
+        ],
+        "COMP_BREAKDOWN_2": [
+            {
+                "TARGET": "_Z",
+                "LABEL": "NA"
+            }
+        ],
+        "COMP_BREAKDOWN_3": [
+            {
+                "TARGET": "_Z",
+                "LABEL": "NA"
+            }
+        ],
+        "TIME_PERIOD": {},
+        "AGG_METHOD": [
+            {
+                "TARGET": "_Z",
+                "LABEL": ""
+            }
+        ],
+        "UNIT_TYPE": [
+            {
+                "SOURCE": "%",
+                "TARGET": "RATIO"
+            },
+            {
+                "SOURCE": "current US\\$",
+                "TARGET": "CUR"
+            },
+            {
+                "SOURCE": "sq\\. km",
+                "TARGET": "NUMBER"
+            },
+            {
+                "SOURCE": "current LCU",
+                "TARGET": "CUR"
+            },
+            {
+                "SOURCE": "current international \\$",
+                "TARGET": "CUR"
+            },
+            {
+                "SOURCE": "constant [0-9]{4} US\\$",
+                "TARGET": "CUR"
+            },
+            {
+                "SOURCE": "constant LCU",
+                "TARGET": "CUR"
+            },
+            {
+                "SOURCE": "constant\u00a0[0-9]{4}\u00a0international\u00a0\\$",
+                "TARGET": "CUR"
+            },
+            {
+                "SOURCE": "current USD",
+                "TARGET": "CUR"
+            },
+            {
+                "SOURCE": "per\u00a0100,000\u00a0population",
+                "TARGET": "RATIO"
+            },
+            {
+                "SOURCE": "per\u00a0100,000\u00a0female\u00a0population",
+                "TARGET": "RATIO"
+            },
+            {
+                "SOURCE": "per\u00a0100,000\u00a0male\u00a0population",
+                "TARGET": "RATIO"
+            },
+            {
+                "SOURCE": "1=low\u00a0to\u00a05=high",
+                "TARGET": "IX"
+            },
+            {
+                "SOURCE": "index",
+                "TARGET": "IX"
+            },
+            {
+                "SOURCE": "years",
+                "TARGET": "NUMBER"
+            },
+            {
+                "SOURCE": "days",
+                "TARGET": "NUMBER"
+            },
+            {
+                "SOURCE": ".*",
+                "TARGET": "COUNT"
+            }
+        ],
+        "DECIMALS": [
+            {
+                "TARGET": "2",
+                "LABEL": "Two"
+            }
+        ],
+        "DATABASE_ID": [
+            {
+                "TARGET": "WB_WDI",
+                "LABEL": "World Development Indicators"
+            }
+        ],
+        "TIME_FORMAT": [
+            {
+                "TARGET": "P1Y",
+                "LABEL": ""
+            }
+        ],
+        "COMMENT_TS": {},
+        "COMMENT_OBS": {},
+        "UNIT_MULT": [
+            {
+                "SOURCE": "thousand",
+                "TARGET": "3"
+            },
+            {
+                "SOURCE": "million",
+                "TARGET": "6"
+            },
+            {
+                "SOURCE": "billion",
+                "TARGET": "9"
+            },
+            {
+                "SOURCE": ".*",
+                "TARGET": "0"
+            }
+        ],
+        "OBS_STATUS": [
+            {
+                "TARGET": "A",
+                "LABEL": "Normal value"
+            }
+        ],
+        "DATA_SOURCE": [
+            {
+                "TARGET": "WB_WDI",
+                "LABEL": "World Development Indicators"
+            }
+        ],
+        "OBS_CONF": [
+            {
+                "TARGET": "PU",
+                "LABEL": "Public"
+            }
+        ],
+        "OBS_VALUE": {}
+    }
+}

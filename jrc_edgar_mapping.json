@@ -1,0 +1,238 @@
+{
+  "components": [
+    {
+      "SOURCE": "NA",
+      "TARGET": "FREQ"
+    },
+    {
+      "SOURCE": "Country_code_A3",
+      "TARGET": "REF_AREA"
+    },
+    {
+      "SOURCE": "Substance",
+      "TARGET": "INDICATOR"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "SEX"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "AGE"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "URBANISATION"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "UNIT_MEASURE"
+    },
+    {
+      "SOURCE": "Substance",
+      "TARGET": "COMP_BREAKDOWN_1"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "COMP_BREAKDOWN_2"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "COMP_BREAKDOWN_3"
+    },
+    {
+      "SOURCE": "year",
+      "TARGET": "TIME_PERIOD"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "AGG_METHOD"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "UNIT_TYPE"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "DECIMALS"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "DATABASE_ID"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "TIME_FORMAT"
+    },
+    {
+      "SOURCE": "IPCC_annex",
+      "TARGET": "COMMENT_TS"
+    },
+    {
+      "SOURCE": "",
+      "TARGET": "COMMENT_OBS"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "UNIT_MULT"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "OBS_STATUS"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "DATA_SOURCE"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "OBS_CONF"
+    },
+    {
+      "SOURCE": "value",
+      "TARGET": "OBS_VALUE"
+    }
+  ],
+  "representation": {
+    "FREQ": [
+      {
+        "TARGET": "A",
+        "LABEL": "Annual"
+      }
+    ],
+    "REF_AREA": [
+      {
+        "SOURCE": "XXX",
+        "TARGET": "XKX",
+        "LABEL": "Kosovo",
+        "IS_REGEX": false
+      }
+    ],
+    "INDICATOR": [
+      {
+          "SOURCE": "Hg_G",
+          "TARGET": "Hg"
+      },
+      {
+        "SOURCE": "Hg_D",
+        "TARGET": "Hg"
+      },
+      {
+        "SOURCE": "Hg_P",
+        "TARGET": "Hg"
+      }
+    ],
+    "SEX": [
+      {
+        "TARGET": "_Z",
+        "LABEL": ""
+      }
+    ],
+    "AGE": [
+      {
+        "TARGET": "_Z",
+        "LABEL": ""
+      }
+    ],
+    "URBANISATION": [
+      {
+        "TARGET": "_T",
+        "LABEL": "Total"
+      }
+    ],
+    "UNIT_MEASURE": [
+      {
+        "TARGET": "T",
+        "LABEL": "Tonnes"
+      }
+    ],
+    "COMP_BREAKDOWN_1": [
+      {
+          "SOURCE": "Hg_G",
+          "TARGET": "JRC_EDGAR_HG_G"
+      },
+      {
+        "SOURCE": "Hg_D",
+        "TARGET": "JRC_EDGAR_HG_D"
+      },
+      {
+        "SOURCE": "Hg_P",
+        "TARGET": "JRC_EDGAR_HG_P"
+      },
+      {
+        "SOURCE": ".*",
+        "TARGET": "_T"
+      }
+    ],
+    "COMP_BREAKDOWN_2": [
+      {
+        "TARGET": "_Z",
+        "LABEL": ""
+      }
+    ],
+    "COMP_BREAKDOWN_3": [
+      {
+        "TARGET": "_Z",
+        "LABEL": ""
+      }
+    ],
+    "TIME_PERIOD": {},
+    "AGG_METHOD": [
+      {
+        "TARGET": "_Z",
+        "LABEL": ""
+      }
+    ],
+    "UNIT_TYPE": [
+      {
+        "TARGET": "NUMBER",
+        "LABEL": ""
+      }
+    ],
+    "DECIMALS": [
+      {
+        "TARGET": "2",
+        "LABEL": ""
+      }
+    ],
+    "DATABASE_ID": [
+      {
+        "TARGET": "JRC_EDGAR",
+        "LABEL": ""
+      }
+    ],
+    "TIME_FORMAT": [
+      {
+        "TARGET": "P1Y",
+        "LABEL": ""
+      }
+    ],
+    "COMMENT_TS": {},
+    "COMMENT_OBS": {},
+    "UNIT_MULT": [
+      {
+        "TARGET": "3",
+        "LABEL": ""
+      }
+    ],
+    "OBS_STATUS": [
+      {
+        "TARGET": "A",
+        "LABEL": ""
+      }
+    ],
+    "DATA_SOURCE": [
+      {
+        "TARGET": "JRC_EDGAR",
+        "LABEL": ""
+      }
+    ],
+    "OBS_CONF": [
+      {
+        "TARGET": "PU",
+        "LABEL": "Public"
+      }
+    ],
+    "OBS_VALUE": {}
+  }
+}
