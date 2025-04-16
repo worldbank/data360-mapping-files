@@ -1,0 +1,246 @@
+{
+  "schema_version": "v1",
+  "dsd_id": "WB.DATA360:DS_DATA360(1.2)",
+  "components": [
+    {
+      "SOURCE": "NA",
+      "TARGET": "FREQ"
+    },
+    {
+      "SOURCE": "Country",
+      "TARGET": "REF_AREA"
+    },
+    {
+      "SOURCE": "indicator",
+      "TARGET": "INDICATOR"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "SEX"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "AGE"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "URBANISATION"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "UNIT_MEASURE"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "COMP_BREAKDOWN_1"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "COMP_BREAKDOWN_2"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "COMP_BREAKDOWN_3"
+    },
+    {
+      "SOURCE": "year",
+      "TARGET": "TIME_PERIOD"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "AGG_METHOD"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "UNIT_TYPE"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "DECIMALS"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "DATABASE_ID"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "TIME_FORMAT"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "COMMENT_TS"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "COMMENT_OBS"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "UNIT_MULT"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "OBS_STATUS"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "DATA_SOURCE"
+    },
+    {
+      "SOURCE": "NA",
+      "TARGET": "OBS_CONF"
+    },
+    {
+      "SOURCE": "value",
+      "TARGET": "OBS_VALUE"
+    }
+  ],
+  "representation": {
+    "FREQ": [
+      {
+        "TARGET": "A",
+        "LABEL": "Annual"
+      }
+    ],
+    "REF_AREA": {},
+    "INDICATOR": [
+      {
+        "SOURCE": "2.15",
+        "TARGET": "WB_PIP_NPOOR_IPL",
+        "LABEL": "Population living below the poverty line (2017 PPP, $2.15) (million)",
+        "IS_REGEX": false
+      },
+      {
+        "SOURCE": "3.65",
+        "TARGET": "WB_PIP_NPOOR_LMIC",
+        "LABEL": "Population living below the poverty line (2017 PPP, $3.65) (million)",
+        "IS_REGEX": false
+      },
+      {
+        "SOURCE": "6.85",
+        "TARGET": "WB_PIP_NPOOR_UMIC",
+        "LABEL": "Population living below the poverty line (2017 PPP, $6.85) (million)",
+        "IS_REGEX": false
+      }
+    ],
+    "SEX": [
+      {
+        "TARGET": "_T",
+        "LABEL": ""
+      }
+    ],
+    "AGE": [
+      {
+        "TARGET": "_T",
+        "LABEL": ""
+      }
+    ],
+    "URBANISATION": [
+      {
+        "TARGET": "_T",
+        "LABEL": ""
+      }
+    ],
+    "UNIT_MEASURE": [
+      {
+        "TARGET": "PS",
+        "LABEL": ""
+      }
+    ],
+    "COMP_BREAKDOWN_1": [
+      {
+        "TARGET": "_Z",
+        "LABEL": ""
+      }
+    ],
+    "COMP_BREAKDOWN_2": [
+      {
+        "TARGET": "_Z",
+        "LABEL": ""
+      }
+    ],
+    "COMP_BREAKDOWN_3": [
+      {
+        "TARGET": "_Z",
+        "LABEL": ""
+      }
+    ],
+    "TIME_PERIOD": {},
+    "AGG_METHOD": [
+      {
+        "TARGET": "_Z",
+        "LABEL": ""
+      }
+    ],
+    "UNIT_TYPE": [
+      {
+        "TARGET": "NUMBER",
+        "LABEL": ""
+      }
+    ],
+    "DECIMALS": [
+      {
+        "TARGET": "2",
+        "LABEL": ""
+      }
+    ],
+    "DATABASE_ID": [
+      {
+        "TARGET": "WB_PIP",
+        "LABEL": ""
+      }
+    ],
+    "TIME_FORMAT": [
+      {
+        "TARGET": "P1Y",
+        "LABEL": ""
+      }
+    ],
+    "COMMENT_TS": [
+      {
+        "SOURCE": "2.15",
+        "TARGET": "Number of people, in millions, living on less than 2.15 a day at 2017 PPP is calculated by multiplying the poverty rate and the population. As a result of revisions in PPP exchange rates, poverty rates for individual countries cannot be compared with poverty rates reported in earlier editions.",
+        "LABEL": "",
+        "IS_REGEX": false
+      },
+      {
+        "SOURCE": "3.65",
+        "TARGET": "Number of people, in millions, living on less than 3.65 a day at 2017 PPP is calculated by multiplying the poverty rate and the population. As a result of revisions in PPP exchange rates, poverty rates for individual countries cannot be compared with poverty rates reported in earlier editions.",
+        "LABEL": "",
+        "IS_REGEX": false
+      },
+      {
+        "SOURCE": "6.85",
+        "TARGET": "Number of people, in millions, living on less than 6.85 a day at 2017 PPP is calculated by multiplying the poverty rate and the population. As a result of revisions in PPP exchange rates, poverty rates for individual countries cannot be compared with poverty rates reported in earlier editions.",
+        "LABEL": "",
+        "IS_REGEX": false
+      }
+    ],
+    "COMMENT_OBS": {},
+    "UNIT_MULT": [
+      {
+        "TARGET": "6",
+        "LABEL": ""
+      }
+    ],
+    "OBS_STATUS": [
+      {
+        "TARGET": "A",
+        "LABEL": ""
+      }
+    ],
+    "DATA_SOURCE": [
+      {
+        "TARGET": "WB_PIP",
+        "LABEL": ""
+      }
+    ],
+    "OBS_CONF": [
+      {
+        "TARGET": "PU",
+        "LABEL": ""
+      }
+    ],
+    "OBS_VALUE": {}
+  }
+}
