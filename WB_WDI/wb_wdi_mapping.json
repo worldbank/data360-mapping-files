@@ -5458,17 +5458,17 @@
         },
         {
             "SOURCE": "IC.REG.COST.PC.ZS",
-            "TARGET": "PT_GNI",
+            "TARGET": "PT_GNI_PS",
             "IS_REGEX": false
         },
         {
             "SOURCE": "IC.REG.COST.PC.MA.ZS",
-            "TARGET": "PT_GNI",
+            "TARGET": "PT_GNI_PS",
             "IS_REGEX": false
         },
         {
             "SOURCE": "IC.REG.COST.PC.FE.ZS",
-            "TARGET": "PT_GNI",
+            "TARGET": "PT_GNI_PS",
             "IS_REGEX": false
         },
         {
@@ -5668,7 +5668,7 @@
         },
         {
             "SOURCE": "IC.BUS.NDNS.ZS",
-            "TARGET": "DT_10P3PS_SUB",
+            "TARGET": "10P3PS",
             "IS_REGEX": false
         },
         {
