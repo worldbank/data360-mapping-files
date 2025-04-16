@@ -67,7 +67,7 @@
       "TARGET": "TIME_FORMAT"
     },
     {
-      "SOURCE": "NA",
+      "SOURCE": "indicator",
       "TARGET": "COMMENT_TS"
     },
     {
