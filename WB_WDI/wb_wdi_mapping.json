@@ -1,6 +1,6 @@
 {
 	"schema_version": "v2",
-	"dsd_id": "WB.DATA360:DS_DATA360(1.2)",
+	"dsd_id": "WB.DATA360:DS_DATA360(1.3)",
     "components": [
         {
             "SOURCE": "NA",
@@ -5458,17 +5458,17 @@
         },
         {
             "SOURCE": "IC.REG.COST.PC.ZS",
-            "TARGET": "PT_GNI_PS",
+            "TARGET": "PT_GNI",
             "IS_REGEX": false
         },
         {
             "SOURCE": "IC.REG.COST.PC.MA.ZS",
-            "TARGET": "PT_GNI_PS",
+            "TARGET": "PT_GNI",
             "IS_REGEX": false
         },
         {
             "SOURCE": "IC.REG.COST.PC.FE.ZS",
-            "TARGET": "PT_GNI_PS",
+            "TARGET": "PT_GNI",
             "IS_REGEX": false
         },
         {
@@ -5668,7 +5668,7 @@
         },
         {
             "SOURCE": "IC.BUS.NDNS.ZS",
-            "TARGET": "10P3PS",
+            "TARGET": "DT_10P3PS_SUB",
             "IS_REGEX": false
         },
         {
@@ -7982,268 +7982,358 @@
             "IS_REGEX": false
         },
         {
-            "SOURCE": "SM.POP.RRWA.EO",
-            "TARGET": "PS",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "SM.POP.RRWA.EA",
-            "TARGET": "PS",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "SM.POP.RHCR.EO",
-            "TARGET": "PS",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "SM.POP.RHCR.EA",
-            "TARGET": "PS",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "SM.POP.OPIP.EO",
-            "TARGET": "PS",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "SM.POP.OPIP.EA",
-            "TARGET": "PS",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "SM.POP.IDPC",
-            "TARGET": "PS",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "SM.POP.FDIP",
-            "TARGET": "PS",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "SM.POP.ASYS.EO",
-            "TARGET": "PS",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "SM.POP.ASYS.EA",
-            "TARGET": "PS",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.US.P3",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.US.P2",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.US.P1",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.US.OS",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.TX.P3",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.TX.P2",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.TX.P1",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.TX.OS",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.P3.OE",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.P2.PS",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.P1.RF",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.MC.P3",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.MC.P2",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.MC.P1",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.MC.OS",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.LB.P3",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.LB.P2",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.LB.P1",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.LB.OS",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.IT.P3",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.IT.P2",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.IT.P1",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.IT.OS",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.FS.P3",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.FS.P2",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.FS.P1",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.FS.OS",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.DR.P3",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.DR.P2",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.DR.P1",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.DR.OS",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.BL.P3",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.BL.P2",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.BL.P1",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.BL.OS",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.BI.P3",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.BI.P2",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.BI.P1",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.BI.OS",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.BE.P3",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.BE.P2",
-            "TARGET": "0_TO_100",
-            "IS_REGEX": false
-        },
-        {
-            "SOURCE": "IC.BRE.BE.P1",
-            "TARGET": "0_TO_100",
+            "SOURCE": "DT.NFL.UNID.CD",
+            "TARGET": "USD",
             "IS_REGEX": false
         },
         {
             "SOURCE": "IC.BRE.BE.OS",
-            "TARGET": "0_TO_100",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.BE.P1",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.BE.P2",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.BE.P3",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.BI.OS",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.BI.P1",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.BI.P2",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.BI.P3",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.BL.OS",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.BL.P1",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.BL.P2",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.BL.P3",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.DR.OS",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.DR.P1",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.DR.P2",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.DR.P3",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.FS.OS",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.FS.P1",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.FS.P2",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.FS.P3",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.IT.OS",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.IT.P1",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.IT.P2",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.IT.P3",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.LB.OS",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.LB.P1",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.LB.P2",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.LB.P3",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.MC.OS",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.MC.P1",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.MC.P2",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.MC.P3",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.P1.RF",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.P2.PS",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.P3.OE",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.TX.OS",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.TX.P1",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.TX.P2",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.TX.P3",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.US.OS",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.US.P1",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.US.P2",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.BRE.US.P3",
+            "TARGET": "IX_0T100",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.CUS.DURS.IM",
+            "TARGET": "D",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.FRM.BNKL.ZS",
+            "TARGET": "PT_F",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.FRM.CDP.ZS",
+            "TARGET": "PT_F",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.FRM.CO2.ZS",
+            "TARGET": "PT_F",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.FRM.CRDC.FL.ZS",
+            "TARGET": "PT_F",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.FRM.CRDC.PT.ZS",
+            "TARGET": "PT_F",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.FRM.ENGM.ZS",
+            "TARGET": "PT_F",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.FRM.EXS.ZS",
+            "TARGET": "PT_F",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.FRM.FO.ZS",
+            "TARGET": "PT_F",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.FRM.LOTM.ZS",
+            "TARGET": "PT_F",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.FRM.NPRD.ZS",
+            "TARGET": "PT_F",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.FRM.TAXE.ZS",
+            "TARGET": "PT_F",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "IC.MNG.IND",
+            "TARGET": "SCORE",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "SH.STA.OWGH.ME.FE.ZS",
+            "TARGET": "PT_CH_Y_LT5",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "SH.STA.OWGH.ME.MA.ZS",
+            "TARGET": "PT_CH_Y_LT5",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "SH.STA.STNT.ME.FE.ZS",
+            "TARGET": "PT_CH_Y_LT5",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "SH.STA.STNT.ME.MA.ZS",
+            "TARGET": "PT_CH_Y_LT5",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "SM.POP.ASYS.EA",
+            "TARGET": "PPL",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "SM.POP.ASYS.EO",
+            "TARGET": "PPL",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "SM.POP.FDIP",
+            "TARGET": "PPL",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "SM.POP.IDPC",
+            "TARGET": "PPL",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "SM.POP.OPIP.EA",
+            "TARGET": "PPL",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "SM.POP.OPIP.EO",
+            "TARGET": "PPL",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "SM.POP.RHCR.EA",
+            "TARGET": "PPL",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "SM.POP.RHCR.EO",
+            "TARGET": "PPL",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "SM.POP.RRWA.EA",
+            "TARGET": "PPL",
+            "IS_REGEX": false
+        },
+        {
+            "SOURCE": "SM.POP.RRWA.EO",
+            "TARGET": "PPL",
             "IS_REGEX": false
         }
     ],
@@ -15981,271 +16071,6 @@
             {
                 "SOURCE": "AG.CON.FERT.PT.ZS",
                 "TARGET": "RATIO",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "SM.POP.RRWA.EO",
-                "TARGET": "COUNT",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "SM.POP.RRWA.EA",
-                "TARGET": "COUNT",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "SM.POP.RHCR.EO",
-                "TARGET": "COUNT",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "SM.POP.RHCR.EA",
-                "TARGET": "COUNT",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "SM.POP.OPIP.EO",
-                "TARGET": "COUNT",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "SM.POP.OPIP.EA",
-                "TARGET": "COUNT",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "SM.POP.IDPC",
-                "TARGET": "COUNT",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "SM.POP.FDIP",
-                "TARGET": "COUNT",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "SM.POP.ASYS.EO",
-                "TARGET": "COUNT",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "SM.POP.ASYS.EA",
-                "TARGET": "COUNT",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.US.P3",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.US.P2",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.US.P1",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.US.OS",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.TX.P3",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.TX.P2",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.TX.P1",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.TX.OS",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.P3.OE",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.P2.PS",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.P1.RF",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.MC.P3",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.MC.P2",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.MC.P1",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.MC.OS",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.LB.P3",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.LB.P2",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.LB.P1",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.LB.OS",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.IT.P3",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.IT.P2",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.IT.P1",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.IT.OS",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.FS.P3",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.FS.P2",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.FS.P1",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.FS.OS",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.DR.P3",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.DR.P2",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.DR.P1",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.DR.OS",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.BL.P3",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.BL.P2",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.BL.P1",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.BL.OS",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.BI.P3",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.BI.P2",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.BI.P1",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.BI.OS",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.BE.P3",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.BE.P2",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.BE.P1",
-                "TARGET": "IX",
-                "IS_REGEX": false
-            },
-            {
-                "SOURCE": "IC.BRE.BE.OS",
-                "TARGET": "IX",
                 "IS_REGEX": false
             }
         ],
