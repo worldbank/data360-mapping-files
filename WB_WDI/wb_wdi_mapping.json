@@ -16450,6 +16450,11 @@
         "COMMENT_TS": {},
         "COMMENT_OBS": {},
         "UNIT_MULT": [
+             {
+                "SOURCE": "IT.NET.SECR.P6",
+                "TARGET": "0",
+                "IS_REGEX": false
+            },
             {
                 "SOURCE": "thousand",
                 "TARGET": "3",
